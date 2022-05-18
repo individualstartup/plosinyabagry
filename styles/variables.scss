@@ -1,0 +1,57 @@
+$gray:    #282b30;
+$gray2:   #495057;
+$gray3:   #6c757d;
+$gray4:   #dee2e6;
+$gray5:   #999;
+$gray6:   #f2f2f2;
+
+$blue:    #2196f3;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #ff0066;
+$red:     #dc3545;
+$red2:     #721c24;
+$orange:  #ff9800 ;
+$orange2:  #f97b3e;
+$yellow:  #FBC02D;
+$green:   #28a745;
+$teal:    #03A473;
+$cyan:    #17a2b8;
+$cyan2:    #30cbb0;
+
+
+$primary:       $teal;
+$success:       $green;
+$info:          $cyan;
+$warning:       $yellow;
+$danger:        $red;
+
+// $grid-breakpoints: (
+//   xs: 0,
+//   sm: 576px,
+//   md: 768px,
+//   lg: 992px,
+//   xl: 1260px
+// );
+
+*:root {
+  --ms-black: #2F2F2F;
+  --ms-orange: #FA7800;
+  --ms-blue: #0029FF;
+  --ms-black100: black;
+
+  --ms-button-gradient: linear-gradient(93.74deg, #FA7800 0%, #E35F00 100%);
+  --ms-body-text: #555555;
+  --ms-body-background: rgb(85,85,85,0.04);
+  --ms-green:#33C600;
+  --ms-red: #E00000;
+  --ms-light-green: #E0F6D9;
+
+
+  --ms-mobil: 375px;
+  --ms-tablet: 744px;
+  --ms-desktop: 1024px;
+
+
+
+}
