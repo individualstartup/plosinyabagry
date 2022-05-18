@@ -19,16 +19,19 @@ interface ComponentProps {
 
 const images = [
     {
-        original: '/gallery/img.png',
-        thumbnail: '/gallery/img.png',
+        original: '/gallery/pracovni_plosina_nifty120t_rozlozena.jpg',
+        thumbnail: '/gallery/pracovni_plosina_nifty120t_rozlozena.jpg',
+    },{
+        original: '/gallery/pracovni_plosina_nifty120t_transport2.jpg',
+        thumbnail: '/gallery/pracovni_plosina_nifty120t_transport2.jpg',
     },
     {
-        original: '/gallery/img.png',
-        thumbnail: '/gallery/img.png',
+        original: '/gallery/pracovni_plosina_nifty120t_transport.jpg',
+        thumbnail: '/gallery/pracovni_plosina_nifty120t_transport.jpg',
     },
     {
-        original: '/gallery/img.png',
-        thumbnail: '/gallery/img.png',
+        original: '/gallery/pracovni_plosina_nifty120t.jpg',
+        thumbnail: '/gallery/pracovni_plosina_nifty120t.jpg',
     },
 ];
 
@@ -113,7 +116,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 </KeyParamsList>
                             </KeyParamsWrapper>
                             <DownloadButtonWrapper>
-                                <DownloadButton>
+                                <DownloadButton href={"/manual_pracovni_plosina_nifty120t.pdf"} target={"_new"}>
                                     <Icon src={"/icons/download.svg"}/><p>Stáhnout návod k obsluze (PDF)</p>
                                 </DownloadButton></DownloadButtonWrapper>
                             <img src={"/gallery/img_3.png"}/>
@@ -306,12 +309,13 @@ const DownloadButtonWrapper = styled.div`
   display: flex;
   cursor: pointer;
 `
-const DownloadButton = styled.div`
+const DownloadButton = styled.a`
   display: flex;
   border-radius: 4px;
   padding: 16px 32px;
   border: 2px solid #FA7800;
   gap: 8px;
+  text-decoration: none;
 
   p {
     font-family: Open Sans;
