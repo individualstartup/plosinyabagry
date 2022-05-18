@@ -124,19 +124,20 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 poznámky.</TextBody></AlertBox>
                             <Hr/>
                             <TipsWrapper>
-                                <IconPanel icon={"/icons/square.svg"}><HeadingH2>Tipy pro použití</HeadingH2></IconPanel>
+                                <IconPanel icon={"/icons/square.svg"}><HeadingH2>Tipy pro
+                                    použití</HeadingH2></IconPanel>
                                 <TipsInner>
-                                    <Tip icon={"/icons/tips/tip1.svg"} text={"Čištění komínů"} />
-                                    <Tip icon={"/icons/tips/tip2.svg"} text={"Opravy a nátěry fasád"} />
-                                    <Tip icon={"/icons/tips/tip3.svg"} text={"Odstraňování ledu a sněhu ze střech"} />
-                                    <Tip icon={"/icons/tips/tip4.svg"} text={"Vánoční výzdoby"} />
-                                    <Tip icon={"/icons/tips/tip5.svg"} text={"Údržba a čištění nemovitostí"} />
-                                    <Tip icon={"/icons/tips/tip6.svg"} text={"Prořezávky stromů"} />
-                                    <Tip icon={"/icons/tips/tip7.svg"} text={"Opláštění a zasklívání budov"} />
-                                    <Tip icon={"/icons/tips/tip8.svg"} text={"Montáže a údržba kamerových systémů"} />
-                                    <Tip icon={"/icons/tips/tip9.svg"} text={"Montáž fotovoltaických panelů"} />
-                                    <Tip icon={"/icons/tips/tip10.svg"} text={"Montáž reklamních plachet a bannerů"} />
-                                    <Tip icon={"/icons/tips/tip11.svg"} text={"Zednické práce"} />
+                                    <Tip icon={"/icons/tips/tip1.svg"} text={"Čištění komínů"}/>
+                                    <Tip icon={"/icons/tips/tip2.svg"} text={"Opravy a nátěry fasád"}/>
+                                    <Tip icon={"/icons/tips/tip3.svg"} text={"Odstraňování ledu a sněhu ze střech"}/>
+                                    <Tip icon={"/icons/tips/tip4.svg"} text={"Vánoční výzdoby"}/>
+                                    <Tip icon={"/icons/tips/tip5.svg"} text={"Údržba a čištění nemovitostí"}/>
+                                    <Tip icon={"/icons/tips/tip6.svg"} text={"Prořezávky stromů"}/>
+                                    <Tip icon={"/icons/tips/tip7.svg"} text={"Opláštění a zasklívání budov"}/>
+                                    <Tip icon={"/icons/tips/tip8.svg"} text={"Montáže a údržba kamerových systémů"}/>
+                                    <Tip icon={"/icons/tips/tip9.svg"} text={"Montáž fotovoltaických panelů"}/>
+                                    <Tip icon={"/icons/tips/tip10.svg"} text={"Montáž reklamních plachet a bannerů"}/>
+                                    <Tip icon={"/icons/tips/tip11.svg"} text={"Zednické práce"}/>
                                 </TipsInner>
                             </TipsWrapper>
                             <Hr/>
@@ -156,10 +157,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <li>bezpečností prvky (helma, zabezpečovací pás, ,…)</li>
                             </ListWrapper>
                         </DetailWrapper>
-                        <ContactWrapper><IconPanel icon={"/icons/square.svg"}><HeadingH3>Náš
-                            kontakt</HeadingH3></IconPanel>
-                            <p>V případě jakýchkoliv dotazů nás neváhejte kontaktovat</p>
-                        </ContactWrapper>
+
                     </Content>
                     <StickyOrderDialog>
                         <DialogWrapper>
@@ -169,7 +167,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <Col>
                                     <Address>Jeronýmova 96, 130 00
                                         Praha</Address>
-                                    <Link>Zobrazit na mapě</Link>
+                                    <Link href={"https://goo.gl/maps/TC5KqAM1Gng8UUKR7"}>Zobrazit na mapě</Link>
                                     <Paragraph>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quis autem vel
                                         eum
                                         iure
@@ -202,16 +200,84 @@ const IndexPage: React.FC<ComponentProps> = () => {
                     </StickyOrderDialog>
                 </ContentAndOrderDialog>
             </PageWrapper>
+            <Footer>
+                <FooterContact>
+                    <NotesAndHeading>
+                        <IconPanel icon={"/icons/square.svg"}><HeadingH3>Náš
+                            kontakt</HeadingH3></IconPanel>
+                        <p>V případě jakýchkoliv dotazů nás neváhejte kontaktovat</p>
+                    </NotesAndHeading>
+                    <IconPanel icon={"/icons/phone.svg"}><ContactItem>704 042 042</ContactItem></IconPanel>
+                    <IconPanel icon={"/icons/email.svg"}><ContactItem>rezervace@plosiny-bagry.cz</ContactItem></IconPanel>
+                </FooterContact>
+
+            </Footer>
+            <DarkFooter>
+                <FooterSocial>
+                    <img src={"/icons/footerlogo.svg"}/>
+                </FooterSocial>
+            </DarkFooter>
         </>
     );
 }
+
+const FooterSocial = styled.div`
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  background-color: #434343;
+  padding: 40px 0;
+`
+
+const ContactItem = styled.div`
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 23px;
+  color: #2F2F2F;
+`
+
+const NotesAndHeading = styled.div`
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+  p {
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22px;
+    color: #555555;
+  }
+`
+const FooterContact = styled.div`
+  display: flex;
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 48px 0;
+  align-items: flex-end;
+`
+
+const Footer = styled.div`
+  background-color: #eee;
+  margin-top: 24px;
+`
+
+const DarkFooter = styled.div`
+  background-color: #434343;
+`
+
 
 const ListWrapper = styled.div`
   row-gap: 24px;
   display: flex;
   flex-direction: column;
   margin-left: 1rem;
-  
+
   li {
     font-family: 'Open Sans';
     font-style: normal;
@@ -406,6 +472,8 @@ const Link = styled.a`
   font-size: 18px;
   line-height: 23px;
   color: var(--ms-blue);
+  cursor: pointer;
+  text-decoration: none;
 `
 
 const Address = styled.div`
@@ -449,6 +517,7 @@ const ContentAndOrderDialog = styled.div`
 const PageWrapper = styled.div`
   max-width: 1200px;
   margin: 0 auto;
+  padding: 0 1rem;
 
   @media screen and (min-width: var(--ms-desktop)) {
     padding: 2.1875rem 0.625rem 3.4375rem 0.625rem;
