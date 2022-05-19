@@ -21,7 +21,7 @@ const images = [
     {
         original: '/gallery/pracovni_plosina_nifty120t_rozlozena.jpg',
         thumbnail: '/gallery/pracovni_plosina_nifty120t_rozlozena.jpg',
-    },{
+    }, {
         original: '/gallery/pracovni_plosina_nifty120t_transport2.jpg',
         thumbnail: '/gallery/pracovni_plosina_nifty120t_transport2.jpg',
     },
@@ -126,6 +126,43 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 balíček objednávejte telefonicky nebo informaci dopiště do
                                 poznámky.</TextBody></AlertBox>
                             <Hr/>
+                            <PriceListWrapper>
+                                <HeadingH3>Ceník</HeadingH3>
+                                <table>
+                                    <tr>
+                                        <th></th>
+                                        <th>Cena bez DPH</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1 - 2 dny</td>
+                                        <td>1 890 Kč / den</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 - 4 dny</td>
+                                        <td>1 690 Kč / den</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 a více dní</td>
+                                        <td>1 490 Kč / den</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Víkendový balíček (od 18:00 v pátek do 7:00 v pondělí)</td>
+                                        <td>3 900 Kč / víkend</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Přivezení plošiny (km násobit 4x - 2 cesty tam a zpět)</td>
+                                        <td>16 Kč / km</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Pronájem ochranného návleku (např. při malování)</td>
+                                        <td>500 Kč / zápůjčka</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Asistence kvalifikované osoby na místě</td>
+                                        <td>490 Kč / hod.</td>
+                                    </tr>
+                                </table>
+                            </PriceListWrapper>
                             <TipsWrapper>
                                 <IconPanel icon={"/icons/square.svg"}><HeadingH2>Tipy pro
                                     použití</HeadingH2></IconPanel>
@@ -144,15 +181,19 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 </TipsInner>
                             </TipsWrapper>
                             <Hr/>
-                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Jak zápůjčka probíhá</HeadingH2></IconPanel>
+                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Jak zápůjčka
+                                probíhá</HeadingH2></IconPanel>
                             <ListWrapper>
                                 <li>provedenou rezervaci potvrdíme e-mailem nebo telefonicky</li>
-                                <li>při předání proběhne zaškolení, zodpovězení dotazů a všechny formality (podpis nájemné smlouvy, platba, nafocení aktuálního stavu) </li>
+                                <li>při předání proběhne zaškolení, zodpovězení dotazů a všechny formality (podpis
+                                    nájemné smlouvy, platba, nafocení aktuálního stavu)
+                                </li>
                                 <li>poskytneme potřebné bezpečností prvky (helma, zabezpečovací pás, ,…)</li>
                                 <li>v případě potřeby jsme na telefonu 704 042 042</li>
                                 <li>při vrácení plošinu zkontrolujeme a pokud je vše v pořádku, kauci hned vracíme</li>
                             </ListWrapper>
-                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Podmínky zapůjčení plošiny</HeadingH2></IconPanel>
+                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Podmínky zapůjčení
+                                plošiny</HeadingH2></IconPanel>
                             <ListWrapper>
                                 <li>vyzvednutí mezi 7:00 a 8:00, vrácení do 18:00</li>
                                 <li>vratná kauce ve výši 5 000 Kč splatná při předání</li>
@@ -160,7 +201,6 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <li>vrácení bez vad a ve stejném stavu (např. bez nečistot)</li>
                             </ListWrapper>
                         </DetailWrapper>
-
                     </Content>
                     <StickyOrderDialog>
                         <DialogWrapper>
@@ -170,7 +210,9 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <Col>
                                     <Address>Hlavní 227, 250 82 Tuklaty</Address>
                                     <Link href={"https://goo.gl/maps/TC5KqAM1Gng8UUKR7"}>Zobrazit na mapě</Link>
-                                    <Paragraph>Plošina s úctyhodnými dosahy (12m do výšky a 6m bokem), ale kompatním podvozkem pro převoz (šxd 1,5 x 4,5m). Disponuje pojezdem s vlastním pohonem pro snadnou manipulaci.
+                                    <Paragraph>Plošina s úctyhodnými dosahy (12m do výšky a 6m bokem), ale kompatním
+                                        podvozkem pro převoz (šxd 1,5 x 4,5m). Disponuje pojezdem s vlastním pohonem pro
+                                        snadnou manipulaci.
                                     </Paragraph>
                                 </Col>
                             </IconPanel>
@@ -191,7 +233,8 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                     </PriceFrom>
                                 </PriceDescription>
                                 <ButtonWrapper>
-                                    <Button label={"Nezávazně poptat"} href={"mailto:rezervace@plosiny-bagry.cz?subject=Poptavka rezervace"}></Button>
+                                    <Button label={"Nezávazně poptat"}
+                                            href={"mailto:rezervace@plosiny-bagry.cz?subject=Poptavka rezervace"}></Button>
                                 </ButtonWrapper>
                                 <Note>Nebo volejte 704 042 042</Note>
                             </PriceAndButtonWrapper>
@@ -207,7 +250,8 @@ const IndexPage: React.FC<ComponentProps> = () => {
                         <p>V případě jakýchkoliv dotazů nás neváhejte kontaktovat</p>
                     </NotesAndHeading>
                     <IconPanel icon={"/icons/phone.svg"}><ContactItem>704 042 042</ContactItem></IconPanel>
-                    <IconPanel icon={"/icons/email.svg"}><ContactItem>rezervace@plosiny-bagry.cz</ContactItem></IconPanel>
+                    <IconPanel
+                        icon={"/icons/email.svg"}><ContactItem>rezervace@plosiny-bagry.cz</ContactItem></IconPanel>
                 </FooterContact>
 
             </Footer>
@@ -219,6 +263,43 @@ const IndexPage: React.FC<ComponentProps> = () => {
         </>
     );
 }
+
+const PriceListWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  table {
+    width: 100%;
+    th {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: right;
+
+      color: #484848;
+    }
+    
+    td {
+      font-family: 'Open Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 22px;
+      color: #484848;
+    }
+    
+    td:nth-child(2) {
+      font-family: 'Exo';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 24px;
+      color: #484848;
+      text-align: right;
+    }
+  }
+`
 
 const Note = styled.div`
   display: flex;
@@ -252,6 +333,7 @@ const NotesAndHeading = styled.div`
   display: flex;
   flex-direction: column;
   row-gap: 24px;
+
   p {
     font-family: 'Open Sans';
     font-style: normal;
