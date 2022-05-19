@@ -144,20 +144,20 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 </TipsInner>
                             </TipsWrapper>
                             <Hr/>
-                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Součást zápujčky</HeadingH2></IconPanel>
+                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Jak zápůjčka probíhá</HeadingH2></IconPanel>
                             <ListWrapper>
-                                <li>bezplatné zaškolení s videonávodem</li>
-                                <li>bezpečností prvky (helma, zabezpečovací pás, ,…)</li>
-                                <li>bezplatné zaškolení s videonávodem</li>
-                                <li>bezplatné zaškolení s videonávodem</li>
-                                <li>bezplatné zaškolení s videonávodem</li>
-                                <li>bezplatné zaškolení s videonávodem</li>
+                                <li>provedenou rezervaci potvrdíme e-mailem nebo telefonicky</li>
+                                <li>při předání proběhne zaškolení, zodpovězení dotazů a všechny formality (podpis nájemné smlouvy, platba, nafocení aktuálního stavu) </li>
+                                <li>poskytneme potřebné bezpečností prvky (helma, zabezpečovací pás, ,…)</li>
+                                <li>v případě potřeby jsme na telefonu 704 042 042</li>
+                                <li>při vrácení plošinu zkontrolujeme a pokud je vše v pořádku, kauci hned vracíme</li>
                             </ListWrapper>
-                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Podmínky zápůjčení</HeadingH2></IconPanel>
+                            <IconPanel icon={"/icons/square.svg"}><HeadingH2>Podmínky zapůjčení plošiny</HeadingH2></IconPanel>
                             <ListWrapper>
-                                <li>dodržení všech bezpečnostních pravidel a zákonných regulací</li>
-                                <li>vrácení plošiny ve stejném stavu (očištěná, bez poškození, ..)</li>
-                                <li>bezpečností prvky (helma, zabezpečovací pás, ,…)</li>
+                                <li>vyzvednutí mezi 7:00 a 8:00, vrácení do 18:00</li>
+                                <li>vratná kauce ve výši 5 000 Kč splatná při předání</li>
+                                <li>nájemce ručí za dodržení podmínek dle VOP a splnění všech zákonných požadavků</li>
+                                <li>vrácení bez vad a ve stejném stavu (např. bez nečistot)</li>
                             </ListWrapper>
                         </DetailWrapper>
 
@@ -168,21 +168,16 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 Nifty 120TAC</HeadingH2>
                             <IconPanel icon={"/icons/poi.svg"}>
                                 <Col>
-                                    <Address>Jeronýmova 96, 130 00
-                                        Praha</Address>
+                                    <Address>Hlavní 227, 250 82 Tuklaty</Address>
                                     <Link href={"https://goo.gl/maps/TC5KqAM1Gng8UUKR7"}>Zobrazit na mapě</Link>
-                                    <Paragraph>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Quis autem vel
-                                        eum
-                                        iure
-                                        reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur,
-                                        vel
-                                        illum</Paragraph>
+                                    <Paragraph>Plošina s úctyhodnými dosahy (12m do výšky a 6m bokem), ale kompatním podvozkem pro převoz (šxd 1,5 x 4,5m). Disponuje pojezdem s vlastním pohonem pro snadnou manipulaci.
+                                    </Paragraph>
                                 </Col>
                             </IconPanel>
                             <IconPanel icon={"/icons/car.svg"}>
                                 <Col>
                                     <Paragraph><ParagraphBold>Vyzvednutí zdarma</ParagraphBold>nebo<br/>
-                                        <ParagraphBoldInline>možností přivezení</ParagraphBoldInline> (20
+                                        <ParagraphBoldInline>možností přivezení</ParagraphBoldInline> (16
                                         Kč/km)</Paragraph>
                                 </Col>
                             </IconPanel>
@@ -191,13 +186,14 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <PriceDescription>
                                     <HeadingH3>Cena/den</HeadingH3>
                                     <PriceFrom>
-                                        <HeadingH2>od 1 799 Kč</HeadingH2>
+                                        <HeadingH2>od 1 499 Kč</HeadingH2>
                                         <PriceVat>(bez DPH)</PriceVat>
                                     </PriceFrom>
                                 </PriceDescription>
                                 <ButtonWrapper>
-                                    <Button label={"Ověřit dostupnost"}></Button>
+                                    <Button label={"Nezávazně poptat"} href={"mailto:rezervace@plosiny-bagry.cz?subject=Poptavka rezervace"}></Button>
                                 </ButtonWrapper>
+                                <Note>Nebo volejte 704 042 042</Note>
                             </PriceAndButtonWrapper>
                         </DialogWrapper>
                     </StickyOrderDialog>
@@ -223,6 +219,16 @@ const IndexPage: React.FC<ComponentProps> = () => {
         </>
     );
 }
+
+const Note = styled.div`
+  display: flex;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 23px;
+  color: #2F2F2F;
+`
 
 const FooterSocial = styled.div`
   display: flex;
