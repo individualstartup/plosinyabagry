@@ -50,19 +50,19 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                            icon={"/icons/advantage/distance.svg"}></Advantage>
                                 <Advantage description={"Snadná manipulace"}
                                            icon={"/icons/advantage/manipulation.svg"}></Advantage>
-                                <Advantage description={"Postačuje ŘP skupiny B"}
+                                <Advantage description={"Odvezete s ŘP sk. B"}
                                            icon={"/icons/advantage/drivinglicence.svg"}></Advantage>
                                 <Advantage description={"Velká nosnost"}
                                            icon={"/icons/advantage/loadingweight.svg"}></Advantage>
-                                <Advantage description={"Videonávod zdarma"}
+                                <Advantage description={"Instruktáž zdarma"}
                                            icon={"/icons/advantage/videotutorial.svg"}></Advantage>
                             </AdvantagesWrapper>
                         </Advantages>
                         <Hr></Hr>
                         <DetailWrapper>
                             <IconPanel icon={"/icons/square.svg"}><HeadingH2>Detail</HeadingH2></IconPanel>
-                            <Paragraphs><Paragraph>Přívěsná pracovní plošina Nifty 120TAC je speciálně navržena tak, aby
-                                poskytoval
+                            <Paragraphs><Paragraph>Přívěsná pracovní plošina <strong>Nifty 120TAC</strong> je speciálně navržena tak, aby
+                                poskytovala
                                 maximální
                                 dosah s co nejkompaktnějším podvozkem.</Paragraph>
                                 <Paragraph>Využitím všestranného teleskopického horního koše poskytuje Nifty 120T
@@ -83,17 +83,17 @@ const IndexPage: React.FC<ComponentProps> = () => {
                             <MainFunctionalitiesWrapper>
                                 <HeadingH3>Hlavní funkce</HeadingH3>
                                 <FunctionsWrapper>
+                                    <Function heading={"Pojezd s vlastním pohonem"}
+                                              description={"Přesun zvládnete bez námahy (bateriový provoz)"}/>
                                     <Function heading={"Teleskopická horní klec"}
                                               description={"Vyšší přesnost při polohování plošiny"}/>
                                     <Function heading={"Plně proporcionální hydraulické ovládání"}
                                               description={"Jednoduché na ovládání"}/>
-                                    <Function heading={"Bi-Energy k dispozici"} description={"Optimalizace využití"}/>
+                                    <Function heading={"Pohon 220V"} description={"Lze zapojit do elektrocentrály s výkonem 5 kW"}/>
                                     <Function heading={"Teleskopické nápravy"}
                                               description={"Přístup přes dvojité dveřní otvory"}/>
                                     <Function heading={"Hydraulické výložníky"}
                                               description={"Pro rychlé a snadné nastavení"}/>
-                                    <Function heading={"Pojezd s vlastním pohodem"}
-                                              description={"Jednoduchý přes na místě (napájen 220V)"}/>
                                 </FunctionsWrapper>
                             </MainFunctionalitiesWrapper>
                             <AlertBox icon={"/icons/man.svg"} backgroundColor={"white"}><TextBody>Nemáte chuť nebo čas s
@@ -170,7 +170,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                     <Tip icon={"/icons/tips/tip1.svg"} text={"Čištění komínů"}/>
                                     <Tip icon={"/icons/tips/tip2.svg"} text={"Opravy a nátěry fasád"}/>
                                     <Tip icon={"/icons/tips/tip3.svg"} text={"Odstraňování ledu a sněhu ze střech"}/>
-                                    <Tip icon={"/icons/tips/tip4.svg"} text={"Vánoční výzdoby"}/>
+                                    <Tip icon={"/icons/tips/tip4.svg"} text={"Instalce vánoční výzdoby"}/>
                                     <Tip icon={"/icons/tips/tip5.svg"} text={"Údržba a čištění nemovitostí"}/>
                                     <Tip icon={"/icons/tips/tip6.svg"} text={"Prořezávky stromů"}/>
                                     <Tip icon={"/icons/tips/tip7.svg"} text={"Opláštění a zasklívání budov"}/>
@@ -188,7 +188,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <li>při předání proběhne zaškolení, zodpovězení dotazů a všechny formality (podpis
                                     nájemné smlouvy, platba, nafocení aktuálního stavu)
                                 </li>
-                                <li>poskytneme potřebné bezpečností prvky (helma, zabezpečovací pás, ,…)</li>
+                                <li>poskytneme potřebné bezpečností vybavení (helma, zabezpečovací pás, ,…)</li>
                                 <li>v případě potřeby jsme na telefonu 704 042 042</li>
                                 <li>při vrácení plošinu zkontrolujeme a pokud je vše v pořádku, kauci hned vracíme</li>
                             </ListWrapper>
@@ -233,10 +233,10 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                     </PriceFrom>
                                 </PriceDescription>
                                 <ButtonWrapper>
-                                    <Button label={"Nezávazně poptat"}
+                                    <Button label={"Poptat e-mailem"}
                                             href={"mailto:rezervace@plosiny-bagry.cz?subject=Poptavka rezervace"}></Button>
                                 </ButtonWrapper>
-                                <Note>Nebo volejte 704 042 042</Note>
+                                <Link href={"tel:00420704042042"}>Poptat telefonicky - 704 042 042</Link>
                             </PriceAndButtonWrapper>
                         </DialogWrapper>
                     </StickyOrderDialog>
