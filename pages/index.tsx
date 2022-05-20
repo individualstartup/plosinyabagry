@@ -346,7 +346,6 @@ const NotesAndHeading = styled.div`
 const FooterContact = styled.div`
   display: flex;
   width: 1200px;
-  width: 100%;
   margin: 0 auto;
   justify-content: space-between;
   padding: 48px 0;
