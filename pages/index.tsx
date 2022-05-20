@@ -204,7 +204,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                     </Content>
                     <StickyOrderDialog>
                         <DialogWrapper>
-                            <HeadingH2>Přívěsná pracovní plošina
+                            <HeadingH2>Pronájem přívěsné pracovní plošiny
                                 Nifty 120TAC</HeadingH2>
                             <IconPanel icon={"/icons/poi.svg"}>
                                 <Col>
@@ -247,7 +247,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                     <NotesAndHeading>
                         <IconPanel icon={"/icons/square.svg"}><HeadingH3>Náš
                             kontakt</HeadingH3></IconPanel>
-                        <p>V případě jakýchkoliv dotazů nás neváhejte kontaktovat</p>
+                        <p>UniCenter s.r.o., Chudenická 1059/30, Praha 15, IČ: 28192133, DIČ: CZ28192133</p>
                     </NotesAndHeading>
                     <IconPanel icon={"/icons/phone.svg"}><ContactItem>704 042 042</ContactItem></IconPanel>
                     <IconPanel
