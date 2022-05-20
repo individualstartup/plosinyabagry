@@ -50,7 +50,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                            icon={"/icons/advantage/distance.svg"}></Advantage>
                                 <Advantage description={"Snadná manipulace"}
                                            icon={"/icons/advantage/manipulation.svg"}></Advantage>
-                                <Advantage description={"Postačuje ŘP kategorie B"}
+                                <Advantage description={"Postačuje ŘP skupiny B"}
                                            icon={"/icons/advantage/drivinglicence.svg"}></Advantage>
                                 <Advantage description={"Velká nosnost"}
                                            icon={"/icons/advantage/loadingweight.svg"}></Advantage>
