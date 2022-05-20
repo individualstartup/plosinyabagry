@@ -228,7 +228,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <PriceDescription>
                                     <HeadingH3>Cena/den</HeadingH3>
                                     <PriceFrom>
-                                        <HeadingH2>od 1 499 Kč</HeadingH2>
+                                        <HeadingH2>od 1 490 Kč</HeadingH2>
                                         <PriceVat>(bez DPH)</PriceVat>
                                     </PriceFrom>
                                 </PriceDescription>
