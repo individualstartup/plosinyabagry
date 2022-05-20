@@ -313,7 +313,7 @@ const Note = styled.div`
 
 const FooterSocial = styled.div`
   display: flex;
-  max-width: 1200px;
+  width: 1200px;
   width: 100%;
   margin: 0 auto;
   background-color: #434343;
@@ -345,7 +345,7 @@ const NotesAndHeading = styled.div`
 `
 const FooterContact = styled.div`
   display: flex;
-  max-width: 1200px;
+  width: 1200px;
   width: 100%;
   margin: 0 auto;
   justify-content: space-between;
