@@ -100,34 +100,8 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 pracovní plošinou operovat sami? Nabízíme možnost <strong>pronájmu plošiny včetně
                                     kvalifikované
                                     osoby</strong>.</TextBody></AlertBox>
-                            <KeyParamsWrapper>
-                                <HeadingH3>Klíčové technické parametry</HeadingH3>
-                                <KeyParamsList>
-                                    <KeyParam>Maximální provozní výška: <strong>12,2 m</strong></KeyParam>
-                                    <KeyParam>Boční dosah: <strong>6,1 m</strong></KeyParam>
-                                    <KeyParam>Šířka podpěr: <strong>3,5 m</strong></KeyParam>
-                                    <KeyParam>Otáčení: <strong>360°</strong></KeyParam>
-                                    <KeyParam>Transportní délka: <strong>4,5 m</strong></KeyParam>
-                                    <KeyParam>Transportní šířka: <strong>1,50 m</strong></KeyParam>
-                                    <KeyParam>Transportní výška: <strong>1,90 m</strong></KeyParam>
-                                    <KeyParam>Rozměry klece: <strong>0,65 x 1,1 m</strong></KeyParam>
-                                    <KeyParam>Nosnost klece: <strong>200 kg</strong></KeyParam>
-                                    <KeyParam>Celková hmotnost: <strong>1 300 kg</strong></KeyParam>
-                                </KeyParamsList>
-                            </KeyParamsWrapper>
-                            <DownloadButtonWrapper>
-                                <DownloadButton href={"/manual_pracovni_plosina_nifty120t.pdf"} target={"_new"}>
-                                    <Icon src={"/icons/download.svg"}/><p>Stáhnout návod k obsluze (PDF)</p>
-                                </DownloadButton></DownloadButtonWrapper>
-                            <img src={"/gallery/img_3.png"}/>
-                            <img src={"/gallery/img_4.png"}/>
-                            <AlertBox icon={"/icons/sale.svg"} backgroundColor={"#d9ecff"}><TextBody>Speciální víkendový
-                                balíček umožní za 3 900 Kč zápůjčku plošiny od pátku 18:00 do pondělí 7:00. Víkendový
-                                balíček objednávejte telefonicky nebo informaci dopiště do
-                                poznámky.</TextBody></AlertBox>
-                            <Hr/>
                             <PriceListWrapper>
-                                <HeadingH3>Ceník</HeadingH3>
+                                <IconPanel icon={"/icons/square.svg"}><HeadingH2>Ceník</HeadingH2></IconPanel>
                                 <table>
                                     <tr>
                                         <th></th>
@@ -163,6 +137,33 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                     </tr>
                                 </table>
                             </PriceListWrapper>
+                            <Hr/>
+                            <KeyParamsWrapper>
+                                <IconPanel icon={"/icons/square.svg"}><HeadingH2>Klíčové technické parametry</HeadingH2></IconPanel>
+                                <KeyParamsList>
+                                    <KeyParam>Maximální provozní výška: <strong>12,2 m</strong></KeyParam>
+                                    <KeyParam>Boční dosah: <strong>6,1 m</strong></KeyParam>
+                                    <KeyParam>Šířka podpěr: <strong>3,5 m</strong></KeyParam>
+                                    <KeyParam>Otáčení: <strong>360°</strong></KeyParam>
+                                    <KeyParam>Transportní délka: <strong>4,5 m</strong></KeyParam>
+                                    <KeyParam>Transportní šířka: <strong>1,50 m</strong></KeyParam>
+                                    <KeyParam>Transportní výška: <strong>1,90 m</strong></KeyParam>
+                                    <KeyParam>Rozměry klece: <strong>0,65 x 1,1 m</strong></KeyParam>
+                                    <KeyParam>Nosnost klece: <strong>200 kg</strong></KeyParam>
+                                    <KeyParam>Celková hmotnost: <strong>1 300 kg</strong></KeyParam>
+                                </KeyParamsList>
+                            </KeyParamsWrapper>
+                            <DownloadButtonWrapper>
+                                <DownloadButton href={"/manual_pracovni_plosina_nifty120t.pdf"} target={"_new"}>
+                                    <Icon src={"/icons/download.svg"}/><p>Stáhnout návod k obsluze (PDF)</p>
+                                </DownloadButton></DownloadButtonWrapper>
+                            <img src={"/gallery/img_3.png"}/>
+                            <img src={"/gallery/img_4.png"}/>
+                            <AlertBox icon={"/icons/sale.svg"} backgroundColor={"#d9ecff"}><TextBody>Speciální víkendový
+                                balíček umožní za 3 900 Kč zápůjčku plošiny od pátku 18:00 do pondělí 7:00. Víkendový
+                                balíček objednávejte telefonicky nebo informaci dopiště do
+                                poznámky.</TextBody></AlertBox>
+                            <Hr/>
                             <TipsWrapper>
                                 <IconPanel icon={"/icons/square.svg"}><HeadingH2>Tipy pro
                                     použití</HeadingH2></IconPanel>
