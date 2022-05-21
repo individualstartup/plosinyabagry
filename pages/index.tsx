@@ -100,6 +100,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 pracovní plošinou operovat sami? Nabízíme možnost <strong>pronájmu plošiny včetně
                                     kvalifikované
                                     osoby</strong>.</TextBody></AlertBox>
+                            <Hr/>
                             <PriceListWrapper>
                                 <IconPanel icon={"/icons/square.svg"}><HeadingH2>Ceník</HeadingH2></IconPanel>
                                 <table>
@@ -159,10 +160,6 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 </DownloadButton></DownloadButtonWrapper>
                             <img src={"/gallery/img_3.png"}/>
                             <img src={"/gallery/img_4.png"}/>
-                            <AlertBox icon={"/icons/sale.svg"} backgroundColor={"#d9ecff"}><TextBody>Speciální víkendový
-                                balíček umožní za 3 900 Kč zápůjčku plošiny od pátku 18:00 do pondělí 7:00. Víkendový
-                                balíček objednávejte telefonicky nebo informaci dopiště do
-                                poznámky.</TextBody></AlertBox>
                             <Hr/>
                             <TipsWrapper>
                                 <IconPanel icon={"/icons/square.svg"}><HeadingH2>Tipy pro
@@ -180,6 +177,10 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                     <Tip icon={"/icons/tips/tip10.svg"} text={"Montáž reklamních plachet a bannerů"}/>
                                     <Tip icon={"/icons/tips/tip11.svg"} text={"Zednické práce"}/>
                                 </TipsInner>
+                                <AlertBox icon={"/icons/sale.svg"} backgroundColor={"#d9ecff"}><TextBody>Speciální víkendový
+                                balíček umožní za 3 900 Kč zápůjčku plošiny od pátku 18:00 do pondělí 7:00. Víkendový
+                                balíček objednávejte telefonicky nebo informaci dopiště do
+                                poznámky.</TextBody></AlertBox>
                             </TipsWrapper>
                             <Hr/>
                             <IconPanel icon={"/icons/square.svg"}><HeadingH2>Jak zápůjčka
