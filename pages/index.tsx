@@ -109,12 +109,12 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                         <th>Cena bez DPH</th>
                                     </tr>
                                     <tr>
-                                        <td>1 - 2 dny [AKCE do 30.6.2022] (</td>
+                                        <td>1 - 2 dny [AKCE do 30.6.2022]</td>
                                         <td>1 490 Kč / den</td>
                                     </tr>
                                     <tr>
                                         <td>3 - 4 dny [AKCE do 30.6.2022]</td>
-                                        <td>1 690 Kč / den</td>
+                                        <td>1 490 Kč / den</td>
                                     </tr>
                                     <tr>
                                         <td>5 a více dní</td>
