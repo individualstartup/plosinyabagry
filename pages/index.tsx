@@ -109,21 +109,18 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                         <th>Cena bez DPH</th>
                                     </tr>
                                     <tr>
-                                        <td>1 - 2 dny</td>
-                                        <td>1 890 Kč / den</td>
+                                        <td>1 - 2 dny [AKCE do 30.6.2022] (</td>
+                                        <td>1 490 Kč / den</td>
                                     </tr>
                                     <tr>
-                                        <td>3 - 4 dny</td>
+                                        <td>3 - 4 dny [AKCE do 30.6.2022]</td>
                                         <td>1 690 Kč / den</td>
                                     </tr>
                                     <tr>
                                         <td>5 a více dní</td>
                                         <td>1 490 Kč / den</td>
                                     </tr>
-                                    <tr>
-                                        <td>Víkendový balíček (od 18:00 v pátek do 7:00 v pondělí)</td>
-                                        <td>3 900 Kč / víkend</td>
-                                    </tr>
+                            
                                     <tr>
                                         <td>Přivezení plošiny (km násobit 4x - 2 cesty tam a zpět)</td>
                                         <td>16 Kč / km</td>
@@ -177,10 +174,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                     <Tip icon={"/icons/tips/tip10.svg"} text={"Montáž reklamních plachet a bannerů"}/>
                                     <Tip icon={"/icons/tips/tip11.svg"} text={"Zednické práce"}/>
                                 </TipsInner>
-                                <AlertBox icon={"/icons/sale.svg"} backgroundColor={"#d9ecff"}><TextBody>Speciální víkendový
-                                balíček umožní za 3 900 Kč zápůjčku plošiny od pátku 18:00 do pondělí 7:00. Víkendový
-                                balíček objednávejte telefonicky nebo informaci dopiště do
-                                poznámky.</TextBody></AlertBox>
+                                
                             </TipsWrapper>
                             <Hr/>
                             <IconPanel icon={"/icons/square.svg"}><HeadingH2>Jak zápůjčka
@@ -230,8 +224,8 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                 <PriceDescription>
                                     <HeadingH3>Cena/den</HeadingH3>
                                     <PriceFrom>
-                                        <HeadingH2>od 1 490 Kč</HeadingH2>
-                                        <PriceVat>(bez DPH)</PriceVat>
+                                        <HeadingH2>AKCE - 1 490 Kč</HeadingH2>
+                                        <PriceVat> (bez DPH)</PriceVat>
                                     </PriceFrom>
                                 </PriceDescription>
                                 <ButtonWrapper>
