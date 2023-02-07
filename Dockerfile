@@ -1,32 +1,39 @@
-#Creates a layer from node:alpine image.
-FROM node:alpine
 
-USER 1001
+FROM node:14.21.2 AS deps
+#RUN apk add --no-cache libc6-compat
+WORKDIR /app
 
-#Creates directories
-RUN mkdir -p /usr/src/app
+COPY package.json yarn.lock ./
+RUN npx browserslist@latest --update-db
+RUN  yarn install
 
-#Sets an environment variable
-ENV PORT 3000
+FROM node:14.21.2 AS builder
+WORKDIR /app
+COPY --from=deps /app/node_modules ./node_modules
+COPY . .
 
-#Sets the working directory for any RUN, CMD, ENTRYPOINT, COPY, and ADD commands
-WORKDIR /usr/src/app
+ENV NEXT_TELEMETRY_DISABLED 1
 
-#Copy new files or directories into the filesystem of the container
-COPY package.json /usr/src/app
-#COPY package-lock.json /usr/src/app
+RUN yarn build
+# RUN NODE_OPTIONS=--openssl-legacy-provider yarn build
 
-#Execute commands in a new layer on top of the current image and commit the results
-RUN npm install
+FROM node:14.21.2 AS runner
+WORKDIR /app
 
-##Copy new files or directories into the filesystem of the container
-COPY . /usr/src/app
+ENV NODE_ENV production
+ENV NEXT_TELEMETRY_DISABLED 1
 
-#Execute commands in a new layer on top of the current image and commit the results
-RUN npm run build
+RUN addgroup --system --gid 1001 nodejs
+RUN adduser --system --uid 1001 nextjs
 
-#Informs container runtime that the container listens on the specified network ports at runtime
+COPY --from=builder --chown=nextjs:nodejs /app/.next ./.next
+COPY --from=builder /app/node_modules ./node_modules
+COPY --from=builder /app/package.json ./package.json
+
+USER nextjs
+
 EXPOSE 3000
 
-#Allows you to configure a container that will run as an executable
-ENTRYPOINT ["npm", "start"]
+ENV PORT 3000
+
+CMD ["npm", "start"]
