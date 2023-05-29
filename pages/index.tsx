@@ -215,7 +215,7 @@ const IndexPage: React.FC<ComponentProps> = () => {
                             <IconPanel icon={"/icons/car.svg"}>
                                 <Col>
                                     <Paragraph><ParagraphBold>Vyzvednutí zdarma</ParagraphBold>nebo<br/>
-                                        <ParagraphBoldInline>možností přivezení</ParagraphBoldInline> (16
+                                        <ParagraphBoldInline>možností přivezení</ParagraphBoldInline> (20
                                         Kč/km)</Paragraph>
                                 </Col>
                             </IconPanel>
