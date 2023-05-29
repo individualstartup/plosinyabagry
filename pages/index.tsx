@@ -109,25 +109,25 @@ const IndexPage: React.FC<ComponentProps> = () => {
                                         <th>Cena bez DPH</th>
                                     </tr>
                                     <tr>
-                                        <td>1 - 2 dny [AKCE do 31.12.2022]</td>
-                                        <td>1 490 Kč / den</td>
+                                        <td>1 - 2 dny</td>
+                                        <td>1 890 Kč / den</td>
                                     </tr>
                                     <tr>
-                                        <td>3 - 4 dny [AKCE do 31.12.2022]</td>
-                                        <td>1 490 Kč / den</td>
+                                        <td>3 - 4 dny</td>
+                                        <td>1 790 Kč / den</td>
                                     </tr>
                                     <tr>
                                         <td>5 a více dní</td>
-                                        <td>1 490 Kč / den</td>
+                                        <td>1 690 Kč / den</td>
                                     </tr>
                             
                                     <tr>
                                         <td>Přivezení plošiny (km násobit 4x - 2 cesty tam a zpět)</td>
-                                        <td>16 Kč / km</td>
+                                        <td>20 Kč / km</td>
                                     </tr>
                                     <tr>
                                         <td>Pronájem ochranného návleku (např. při malování)</td>
-                                        <td>500 Kč / zápůjčka</td>
+                                        <td>750 Kč / zápůjčka</td>
                                     </tr>
                                     <tr>
                                         <td>Asistence kvalifikované osoby na místě</td>
@@ -222,9 +222,9 @@ const IndexPage: React.FC<ComponentProps> = () => {
                             <Hr></Hr>
                             <PriceAndButtonWrapper>
                                 <PriceDescription>
-                                    <HeadingH3>Cena/den</HeadingH3>
+                                    <HeadingH3>Cena</HeadingH3>
                                     <PriceFrom>
-                                        <HeadingH2>AKCE - 1 490 Kč</HeadingH2>
+                                        <HeadingH2>Od 1 690 Kč / den </HeadingH2>
                                         <PriceVat> (bez DPH)</PriceVat>
                                     </PriceFrom>
                                 </PriceDescription>
